@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: asesor-pedagogico-ia-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.10"
+      - key: AI_PROVIDER
+        value: "gemini"
+      - key: GEMINI_MODEL
+        value: "gemini-3.5-flash-lite"
+      - key: SANDBOX_MODE
+        value: "subprocess"
+      - key: STORAGE_MODE
+        value: "supabase"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: SUPABASE_BUCKET
+        value: "submissions"
+      - key: CORS_ORIGINS
+        sync: false

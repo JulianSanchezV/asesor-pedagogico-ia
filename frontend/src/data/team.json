@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Juan Castillo",
+    "role": "Arquitecto de Software & Backend IA",
+    "bio": "Diseño de la API en FastAPI, contratos estructurados Pydantic, integración multimodal con Google Gemini y cálculo determinista de evaluaciones.",
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Juan%20Castillo&backgroundColor=4f46e5"
+  },
+  {
+    "name": "Diego Granada",
+    "role": "Ingeniero Frontend & Visualización",
+    "bio": "Construcción de la interfaz web en React y Tailwind CSS, constructor de rúbricas con validación del 100 %, gráficas de evolución y mapa mental interactivo.",
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Diego%20Granada&backgroundColor=0f766e"
+  },
+  {
+    "name": "Julian Sanchez",
+    "role": "Ingeniero de IA, Sandbox & Analítica",
+    "bio": "Orquestación de modelos de IA configurables, verificación objetiva de código en sandbox aislado, informes integrados descargables en PDF y pruebas.",
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Julian%20Sanchez&backgroundColor=0369a1"
+  },
+  {
+    "name": "Brayan Rendon",
+    "role": "DevOps, Seguridad & Despliegue Cloud",
+    "bio": "Autenticación JWT con roles, trazabilidad y auditoría docente, persistencia en Supabase PostgreSQL/Storage y despliegue continuo en Render y GitHub Pages.",
+    "avatar": "https://api.dicebear.com/9.x/initials/svg?seed=Brayan%20Rendon&backgroundColor=7c3aed"
+  }
+]
