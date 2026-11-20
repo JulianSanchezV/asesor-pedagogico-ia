@@ -7,6 +7,7 @@ from sqlalchemy import (
     ForeignKey,
     Integer,
     JSON,
+    LargeBinary,
     String,
     Text,
 )
@@ -171,3 +172,12 @@ class AISettingsModel(Base):
     base_url = Column(String(300), default="")
     api_key_override = Column(String(300), default="")
     updated_at = Column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
+
+
+class StoredFile(Base):
+    __tablename__ = "stored_files"
+
+    id = Column(String(64), primary_key=True, index=True)
+    filename = Column(String(255), nullable=False)
+    content = Column(LargeBinary, nullable=False)
+    created_at = Column(DateTime(timezone=True), default=utcnow)
